@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ 
+@media (width<=576px){
+    body{
+        
+.container{
+    display: grid;
+    grid-template-rows: 9vh 12vh 70vh 9vh ;
+    grid-template-areas: 
+    'primero'
+    'segundo'
+    'tercero'
+    'cuarto';
+    
+} 
+
+.primero{
+    grid-area: primero;
+    background-color: rgb(62, 62, 240);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+.segundo{
+    grid-area: segundo;
+    background-color: rgb(243, 236, 236);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.precio{
+    width: 40vw;
+    height: 4vh;
+}
+
+.tercero{
+    grid-area: tercero;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+}
+
+.buton1{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    width: 80%;
+    height: 70%;
+    border: 0;
+}
+
+.tercero img{
+    width: 80vw;
+}
+
+.cuarto{
+    grid-area: cuarto;
+    background-color: rgb(31, 18, 214);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    }
+
+} 
+
+
+/* Desktoppppppppppppppppppppppppppppppppppppppppppppppppppppppppp */
+
+@media (width>=576px){
+    body{
+
+        
+.container{    
+    display: grid;      
+    grid-template-areas: 
+    'primero segundo'
+    'cuarto tercero'
+    ;
+    grid-template-columns: 1fr 6fr; 
+    
+    
+} 
+
+.primero{
+    grid-area: primero;
+    background-color: rgb(62, 62, 240);
+    color: white;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large; */
+    height: 90vh;
+   
+}
+
+.segundo{
+    grid-area: segundo;
+    background-color: rgb(243, 236, 236);
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    height: 9vh;
+  
+}
+
+/* .precio{
+    width: 40vw;
+    height: 4vh;
+} */
+
+.tercero{
+    grid-area: tercero;
+    background-color: white;
+    border: solid 1px black;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    color: blue;
+  
+}
+
+.buton1{
+    background-color: blue;
+    color: white;
+    /* text-align: center;
+    width: 80%;
+    height: 70%;
+    border: 0; */
+}
+
+ .tercero img{
+    width: 1vw;
+    height: 1vh;
+} 
+
+.cuarto{
+    grid-area: cuarto;
+    background-color: rgb(31, 18, 214);
+    color: white;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    height: 10vh;
+}
+
+}
+
+}  
